@@ -1,0 +1,7 @@
+.env
+node_modules
+dist.wireit
+.wireit/*
+**/.DS_Store
+.yarn/*
+.npmrc/*
