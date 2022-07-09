@@ -271,7 +271,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.0.3":
+"@types/node@npm:*, @types/node@npm:18.0.3":
   version: 18.0.3
   resolution: "@types/node@npm:18.0.3"
   checksum: 5dec59fbbc1186c808b53df1ca717dad034dbd6a901c75f5b052c845618b531b05f27217122c6254db99529a68618e4cfc534ae3dbf4e88754e9e572df80defa
@@ -326,7 +326,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.30.5":
+"@typescript-eslint/eslint-plugin@npm:5.30.5":
   version: 5.30.5
   resolution: "@typescript-eslint/eslint-plugin@npm:5.30.5"
   dependencies:
@@ -349,7 +349,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.10.0, @typescript-eslint/parser@npm:^5.30.5":
+"@typescript-eslint/parser@npm:5.30.5, @typescript-eslint/parser@npm:^5.10.0":
   version: 5.30.5
   resolution: "@typescript-eslint/parser@npm:5.30.5"
   dependencies:
@@ -957,9 +957,9 @@ __metadata:
   dependencies:
     "@types/express": ^4.17.13
     "@types/mongoose": ^5.11.97
-    "@types/node": ^18.0.3
-    "@typescript-eslint/eslint-plugin": ^5.30.5
-    "@typescript-eslint/parser": ^5.30.5
+    "@types/node": 18.0.3
+    "@typescript-eslint/eslint-plugin": 5.30.5
+    "@typescript-eslint/parser": 5.30.5
     axios: ^0.27.2
     bcryptjs: ^2.4.3
     body-parser: ^1.20.0
@@ -969,25 +969,25 @@ __metadata:
     cookie-parser: ^1.4.6
     cors: ^2.8.5
     dotenv: ^16.0.0
-    eslint: ^8.19.0
-    eslint-config-prettier: ^8.5.0
-    eslint-plugin-import: ^2.26.0
-    eslint-plugin-jsdoc: ^39.3.3
-    eslint-plugin-prettier: ^4.2.1
+    eslint: 8.19.0
+    eslint-config-prettier: 8.5.0
+    eslint-plugin-import: 2.26.0
+    eslint-plugin-jsdoc: 39.3.3
+    eslint-plugin-prettier: 4.2.1
     express: ^4.18.1
     express-correlation-id: ^2.0.1
     express-ping: ^1.4.0
     express-rate-limit: ^6.4.0
     express-validator: ^6.14.0
     helmet: ^5.0.2
-    husky: ^8.0.0
+    husky: 8.0.1
     jsonwebtoken: ^8.5.1
-    lint-staged: ^13.0.3
+    lint-staged: 13.0.3
     mathjs: ^10.4.1
     mongoose: ^6.2.10
-    nodemon: ^2.0.19
-    prettier: ^2.7.1
-    prettier-eslint: ^15.0.1
+    nodemon: 2.0.19
+    prettier: 2.7.1
+    prettier-eslint: 15.0.1
     ts-node: ^10.7.0
     typescript: ^4.6.4
     uuid: ^8.3.2
@@ -1498,7 +1498,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.5.0":
+"eslint-config-prettier@npm:8.5.0":
   version: 8.5.0
   resolution: "eslint-config-prettier@npm:8.5.0"
   peerDependencies:
@@ -1529,7 +1529,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.26.0":
+"eslint-plugin-import@npm:2.26.0":
   version: 2.26.0
   resolution: "eslint-plugin-import@npm:2.26.0"
   dependencies:
@@ -1552,7 +1552,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jsdoc@npm:^39.3.3":
+"eslint-plugin-jsdoc@npm:39.3.3":
   version: 39.3.3
   resolution: "eslint-plugin-jsdoc@npm:39.3.3"
   dependencies:
@@ -1569,7 +1569,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^4.2.1":
+"eslint-plugin-prettier@npm:4.2.1":
   version: 4.2.1
   resolution: "eslint-plugin-prettier@npm:4.2.1"
   dependencies:
@@ -1629,7 +1629,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.19.0, eslint@npm:^8.7.0":
+"eslint@npm:8.19.0, eslint@npm:^8.7.0":
   version: 8.19.0
   resolution: "eslint@npm:8.19.0"
   dependencies:
@@ -2298,7 +2298,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^8.0.0":
+"husky@npm:8.0.1":
   version: 8.0.1
   resolution: "husky@npm:8.0.1"
   bin:
@@ -2705,7 +2705,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^13.0.3":
+"lint-staged@npm:13.0.3":
   version: 13.0.3
   resolution: "lint-staged@npm:13.0.3"
   dependencies:
@@ -3233,7 +3233,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemon@npm:^2.0.19":
+"nodemon@npm:2.0.19":
   version: 2.0.19
   resolution: "nodemon@npm:2.0.19"
   dependencies:
@@ -3526,7 +3526,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-eslint@npm:^15.0.1":
+"prettier-eslint@npm:15.0.1":
   version: 15.0.1
   resolution: "prettier-eslint@npm:15.0.1"
   dependencies:
@@ -3557,7 +3557,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.5.1, prettier@npm:^2.7.1":
+"prettier@npm:2.7.1, prettier@npm:^2.5.1":
   version: 2.7.1
   resolution: "prettier@npm:2.7.1"
   bin:
