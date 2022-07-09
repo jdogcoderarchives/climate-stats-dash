@@ -11,13 +11,12 @@ import { v4 as uuidv4 } from "uuid";
 import "dotenv/config";
 
 import errorLogger from "./logger";
-/*
-import { hasLockedAccess } from "./middleware/hasLockedAccess";
 import { isAdmin } from "./middleware/isAdmin";
 import { authToken } from "./middleware/middleware";
-*/
-import routes from "./routes/router"
 
+import adminRoutes from "./routes/admin";
+import apiRoutes from "./routes/api";
+import authRoutes from "./routes/auth";
 
 const app = express();
 
@@ -36,22 +35,24 @@ app.use(helmet());
 app.use(health.ping());
 app.use(cors());
 app.use(correlator());
-app.use(limiter)
+app.use(limiter);
 
-app.use("/", routes)
+app.use("/auth", limiter, authRoutes);
+app.use("/v4", limiter, authToken, apiRoutes);
+app.use("/admin", limiter, isAdmin, adminRoutes);
 
 // catch all errors
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.use((err, req, res, next) => {
-    const errorID = uuidv4();
-    errorLogger(err, errorID, req);
-    res.status(500).json({
-      message:
-        "Please contact a developer in our discord support server, and provide the information below.",
-      error: err.message,
-      errorID,
-      requestID: req.correlationId(),
-    });
+  const errorID = uuidv4();
+  errorLogger(err, errorID, req);
+  res.status(500).json({
+    message:
+      "Please contact a developer in our discord support server, and provide the information below.",
+    error: err.message,
+    errorID,
+    requestID: req.correlationId(),
   });
+});
 
-  export default app;
+export default app;
